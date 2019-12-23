@@ -1,0 +1,151 @@
+.search_wrap {
+    /* width: 45vw; */
+    margin: 2.5vh 0;
+    height: 3.9vh;
+    border: 0px solid orange;
+    /* vertical-align: middle; */
+
+}
+
+.search_wrap>img {
+    width: 7.0vw;
+    height: 3.9vh;
+    vertical-align: middle;
+    margin-right: 15px;
+
+}
+
+.search_wrap>input {
+    /* width: 34.8vw; */
+    height: 2.7vh;
+    font-size: 0.8125em;
+    border: none;
+
+}
+
+.banner {
+    /* width: 83.4vw;
+    height: 30vh; */
+    font-size: 0.9375em;
+    position: relative;
+}
+
+.banner>img {
+    width: 100%;
+    height: 26.36vh;
+
+}
+
+.jishu {
+    font-size: 0.6875em;
+    color: gray;
+    position: absolute;
+    right: 1vw;
+    bottom: 4vh;
+}
+
+.shujia_rem {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    /* padding: 0 0.35em; */
+}
+
+.shujia_rem>img {
+    width: 100%;
+    height: 14vh;
+}
+
+.rem_jishu {
+    font-size: 0.625em;
+    color: white;
+    position: absolute;
+    right: 2vw;
+    bottom: 6.5vh;
+}
+
+.vip {
+    position: absolute;
+    top: 1vh;
+    left: 3vw;
+    font-size: 0.625em;
+    color: rgba(255, 141, 26, 1);
+
+}
+
+.xiaoming{
+    font-size: 0.875em;
+    color: rgba(0, 0, 0, 1);
+}
+.ming>p{
+    font-size: 0.875em;
+    color: rgba(0, 0, 0, 1);
+}
+.jianjie {
+    font-size: 0.75em;
+    /* color: rgba(166, 166, 166, 1); */
+
+}
+.huanyihuan {
+    height: 3vh;
+    line-height: 3vh;
+    text-align: center;
+    font-size: 0.8125em;
+}
+
+.huanyihuan>img {
+    width: 1em;
+    height: 1em;
+}
+
+
+
+.content_list {
+    width: 100%;
+    margin-top: 2em;
+
+
+}
+
+.www {
+    width: 100%;
+    overflow: scroll;
+
+}
+
+.t_ming {
+
+    width: 340%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ming>img {
+    width: 60vw;
+    height: 14vh;
+    filter: saturate(1.0) hue-rotate(0deg) brightness(0.8) contrast(1.0);
+}
+
+.ming{
+    position: relative;
+}
+
+.mingri_jishu {
+    font-size: 0.625em;
+    color: white;
+    position: absolute;
+    right: 1.2vw;
+    top: 11.5vh;
+}
+.mm{
+    font-size: 1.25em;
+    margin-top: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+/* .mingri{
+    margin-top: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+} */

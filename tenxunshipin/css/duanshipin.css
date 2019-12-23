@@ -1,0 +1,117 @@
+.duanshipin {
+    width: 100%;
+    height: 31.5vh;
+    overflow:hidden;
+    overflow-y:hidden;
+
+}
+
+
+.daohang {
+    margin: 2.5vh 0;
+}
+
+.reirongkuang {
+    width: 100%;
+    overflow: scroll;
+}
+
+
+.reirongkuang>ul {
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reirongkuang>ul>li {
+    width:20vw;
+    height: 3.59vh;
+    float: left;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.bianse {
+    color: orange;
+}
+
+
+.duanshipin_list {
+    width: 99%;
+    height: 40vh;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+
+
+.duanshipin>img {
+    width: 100vw;
+    height: 100%;
+
+    filter: saturate(1.0) hue-rotate(0deg) brightness(0.6) contrast(1.0);
+
+}
+
+.biaoti {
+    width: 92vw;
+    height: 3.7vh;
+    font-size: 1.125em;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+.gerenxinxi {
+    width: 96%;
+    height: 7vh;
+    margin-top: 1rem;
+   padding-left: 1rem;
+
+}
+
+.touxiang {
+    width: 8vw;
+    height: 4.5vh;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.gerenxinxi>span {
+    display: inline-block;
+    width: 18.6vw;
+    height: 3.5vh;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 4vh;
+    vertical-align: middle;
+    background-color: rgba(153, 152, 152, 0.2);
+}
+
+.yi {
+    position: relative;
+
+}
+
+.tubiao {
+    /* width: 80px;
+    height: 20px; */
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.tubiao>img {
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    text-align: center;
+
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>腾讯视频</title>
+    <link rel="stylesheet" href="../css/shouye.css">
+    <link rel="stylesheet" href="../css/duanshipin.css">
+    <link rel="stylesheet" href="../css/wode.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .app_wrap {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            /* margin: 0 auto; */
+        }
+
+        .app_content {
+            width: 100%;
+            height: 92.6vh;
+            overflow: scroll;
+            /* border: 1px solid red;  */
+            /* background-color: brown; */
+        }
+
+        .app_caozuo {
+            width: 100vw;
+            height: 7.4vh;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            line-height: 3vh;
+        }
+
+        .app_caozuo>div {
+            flex: 1;
+            /* border: 1px solid black; */
+            text-align: center;
+            /* line-height: 200%; */
+            /* padding-top:1rem; */
+            font-size: 0.69rem;
+        }
+
+        .kuais>img {
+            width: 6.5vw;
+            height: 3.7vh;
+            /* padding-top: 0.5rem; */
+        }
+
+        .app_content>div {
+            width: 100%;
+            height: 100%;
+            display: none;
+            overflow: scroll;
+
+        }
+
+        .app_content>.shouye_wrap {
+            width: 94%;
+            display: block;
+            margin: 2.5vh auto;
+        }
+
+
+
+        /* .duanshipin_wrap {
+            background-color: yellow;
+            display: none;
+        } */
+
+        /* .pindao_wrap {
+            background-color: blue;
+            display: none;
+        }
+
+        .wode_wrap {
+            background-color: green;
+            display: none;
+        } */
+    </style>
+</head>
+<div class="app_wrap">
+    <div class="app_content">
+        <div class="shouye_wrap">
+            <div class="search_wrap">
+                <img src="../images/fangdajing.png" alt=""><input type="text" placeholder="请输入片名、主演或导演">
+            </div>
+            <div class="content_wrap">
+                <div class="banner">
+                    <img src="../images/lunbo1.jpg" alt="">
+                    <div class="jishu">更新至44级</div>
+                    <p>【猎毒人】吕云鹏计划通楚天南中风下线？</p>
+                </div>
+                <div class="content_list">
+                    <div class="mm"><p>暑假刷片看这里！</p></div>
+                    
+                </div>
+
+                <div class="mm">
+                    <p>明日之子·九大厂牌候选人</p>
+                </div>
+                <div class="www">
+                    <div class="t_ming"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="duanshipin_wrap">
+            <div class="daohang">
+                <div class="reirongkuang">
+                    <ul>
+                        <li class="bianse">王者荣耀</li>
+                        <li>快看</li>
+                        <li>神剪辑</li>
+                        <li>搞笑</li>
+                        <li>新闻</li>
+                        <li>舞蹈</li>
+                        <li>健康</li>
+                        <li>健身</li>
+                        <li>娱乐</li>
+                        <li>游戏</li>
+                        <li>英雄联盟</li>
+                        <li>萌宠</li>
+                        <li>情感</li>
+                        <li>汽车</li>
+                        <li>美食</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="duanshipin_list"></div>
+        </div>
+        <div class="pindao_wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="wode_wrap">
+            <div class="wodetouxiang">
+                <img src="../images/wodetouxiang.jpg" alt="">
+                <p class="my_name">Dreity</p>
+            </div>
+            <div class="laji caiji"></div>
+            <p class="my_vip">
+                <img src="../images/vip.png" alt="">
+                <span>开通VIP会员</span>
+            </p>
+            <div class="laji"></div>
+            <p class="his">观看历史</p>
+            <div class="watch_history">
+
+                <div class="my_history">
+                    <!-- <div class="history">
+                        <img src="../images/lishi1.jpeg" alt="">
+                        <p>制裁特工<p>
+
+                    </div> -->
+
+
+                </div>
+            </div>
+            <div class="laji caiji"></div>
+            <p class="nihao">我的看单</p>
+            <div class="laji"></div>
+            <p class="nihao">观看历史</p>
+        </div>
+    </div>
+    <div class="app_caozuo">
+        <div class="kuais">
+            <img src="../images/shouye_a.png" alt="">
+            <p>首页</p>
+        </div>
+        <div class="kuais">
+            <img src="../images/redu.png" alt="">
+            <p>短视频</p>
+        </div>
+        <div class="kuais">
+            <img src="../images/pindao.png" alt="">
+            <p>频道</p>
+        </div>
+        <div class="kuais">
+            <img src="../images/wode.png" alt="">
+            <p>我的</p>
+        </div>
+    </div>
+</div>
+
+
+
+<body>
+
+</body>
+<script src="../js/jquery-min.js"></script>
+<script src="../js/shuju.js"></script>
+<script src="../js/duanshipin.js"></script>
+<script src="../js/wode.js"></script>
+
+<script>
+
+    // 底部到行上的点击事件
+    $(".kuais").click(function () {
+        var that = this
+        var dian_index = $(this).index()
+        $(".kuais").each(function (index, item) {
+
+            if (dian_index == index) {
+                var cur_src = $(item).find("img").attr("src")
+                if (cur_src.indexOf("_a") == -1) {
+                    $(item).find("img").attr("src", cur_src.replace(".png", "_a.png"))
+                }
+            } else {
+                var cur_src = $(item).find("img").attr("src")
+                $(item).find("img").attr("src", cur_src.replace("_a", ""))
+
+            }
+        })
+
+        $(".app_content>div").each(function (index, item) {
+            if ($(that).index() == index) {
+                $(item).css({
+                    "display": "block"
+                })
+            } else {
+                $(item).css({
+                    "display": "none"
+                })
+            }
+        })
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script src="../js/shouye.js"></script>
+</html>
