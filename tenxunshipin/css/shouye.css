@@ -52,7 +52,7 @@
 }
 
 .shujia_rem>img {
-    width: 100%;
+    width: 96%;
     height: 14vh;
 }
 
@@ -60,7 +60,7 @@
     font-size: 0.625em;
     color: white;
     position: absolute;
-    right: 2vw;
+    right: 3vw;
     bottom: 6.5vh;
 }
 

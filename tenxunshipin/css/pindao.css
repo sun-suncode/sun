@@ -1,0 +1,91 @@
+
+
+
+        .xuanze {
+        
+            display: flex;
+        }
+
+        .wenzizi {
+            flex: 4;
+       
+           
+        }
+
+        .soututu {
+            flex: 1;
+        }
+
+        .soututu img {
+            margin-left: 90px;
+            width: 24px;
+            height: 24px;
+            color: rgba(128, 128, 128, 1);
+        }
+
+        .wenzizi span {
+          margin: 0 0.6em;
+            font-weight: bold;
+        }
+
+        .xiahuaxian {
+            padding-bottom: 5px;
+            color: orange;
+            text-decoration: underline;
+        }
+
+        .tuijianlan {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .tuijianlan div {
+
+            text-align: center;
+            border: 1px;
+            width: 23vw;
+            color: rgba(128, 128, 128, 1);
+            background-color: rgba(210, 210, 210, 0.2);
+            border-radius: 4px;
+            font-size: 0.875em;
+        }
+
+        .tuijianlan>span {
+            color: rgba(0, 0, 0, 1);
+            font-size: 0.875em;
+            font-weight: bold;
+        }
+
+        .tu_11 {
+
+            width: 100%;
+            height: 194px;
+        }
+
+
+        /* .list_text {
+            width: 32.5vw;
+            height: 4vh;
+            color: rgba(0, 0, 0, 1);
+            font-size: 1.125em;
+            font-weight: bold;
+        } */
+
+        .lunbotu {
+            margin-bottom: 1.5rem;
+        }
+
+        .lunbotu>span {
+
+            color: rgba(0, 0, 0, 1);
+            font-size: 0.875em;
+            font-weight: bold;
+        }
+
+
+        .app_content>.pindao_wrap {
+            width: 94%;
+            margin: 2.5vh auto;
+        }

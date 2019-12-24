@@ -4,7 +4,7 @@ for (var i = 0; i < re_date.length; i++) {
     content_list1 += `<div class="mm"><p>` + re_date[i].list_name + `</p></div>`
 
     for (var j = 0; j < re_date[i].xinxi.length; j++) {
-        content_list1 += `<div class="shujia_rem">
+        content_list1 += `<div class="shujia_rem" class="pp">
 
         <img src=`+ re_date[i].xinxi[j].img + ` alt="">
         <span class="vip">`+ re_date[i].xinxi[j].vip + `</span>
