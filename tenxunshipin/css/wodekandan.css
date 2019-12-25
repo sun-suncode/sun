@@ -1,72 +1,76 @@
+.wodekandan {
+    display: none;
+    width: 90vh;
+    margin: 0 auto;
+    /* background-color: green; */
+}
 
-        .wodekandan {
-            display: none;
-       width: 90vh;
-       margin: 0 auto;
-            /* background-color: green; */
-        }
+.kan_top {
+    margin: 2.5vh auto;
+    width: 100%;
+    height: 6.65vh;
 
-        .kan_top {
-            margin: 2.5vh auto;
-            width: 100%;
-            height: 6.65vh;
-            
-        }
-        .kan_top>img{
-            width: 8vw;
-            height: 4.5vh;
-            vertical-align: middle;
-        }
-        .kandan_ {
-            width: 100%;
-            /* height: 6.65vh; */
-            /* display: inline-block; */
-            font-weight: bold;
-            font-size: 1.375em;
-            margin: 0 6rem;
-            vertical-align: middle;
-          
+}
 
-        }
+.kan_top>img {
+    width: 8vw;
+    height: 4.5vh;
+    vertical-align: middle;
+}
 
-        .one>.kandan_img>img {
-            width: 31.4vw;
-            height: 10vh;
-        }
-
-        .one {
-            display: flex;
+.kandan_ {
+    width: 100%;
+    /* height: 6.65vh; */
+    /* display: inline-block; */
+    font-weight: bold;
+    font-size: 1.375em;
+    margin: 0 6rem;
+    vertical-align: middle;
 
 
-        }
+}
 
-        .one>div {
+.one>.kandan_img>img {
+    width: 31.4vw;
+    height: 10vh;
+}
 
-            font-size: 0.875em;
-            padding: 1em;
-        }
-        .one>.kandanxinxi{
-            padding-top: 1em;
-        }
-        .kandan_img {
-            position: relative;
-        }
+.one {
+    display: flex;
 
-        .biaoshi {
-            width: 7.2vw;
-            height: 2.5vh;
-            font-size: 0.75em;
-            position: absolute;
-            top: 2.5vh;
-            right: 4vw;
-            text-align: center;
-            color: rgba(255, 255, 255, 1);
-            background-color: rgba(255, 141, 26, 1);
-        }
-        .kan_footer{
-         
-            width: 100%;
-            height: 6.6vh;
-            text-align: center;
-            font-size: 1em;
-        }
+
+}
+
+.one>div {
+
+    font-size: 0.875em;
+    padding: 1em;
+}
+
+.one>.kandanxinxi {
+    padding-top: 1em;
+}
+
+.kandan_img {
+    position: relative;
+}
+
+.biaoshi {
+    width: 10vw;
+    height: 2.5vh;
+    font-size: 0.75em;
+    position: absolute;
+    top: 2.5vh;
+    right: 4vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 141, 26, 1);
+}
+
+.kan_footer {
+
+    width: 100%;
+    height: 6.6vh;
+    text-align: center;
+    font-size: 1em;
+}
