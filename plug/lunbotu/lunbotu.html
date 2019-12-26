@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper的使用</title>
+
+    <link rel="stylesheet" href="./css/swiper.css">
+    <style>
+        /* 设置大小，根绝需要决定大小 */
+        .swiper-container {
+            width: 600px;
+            height: 400px;
+        }
+
+        /* 分页器样式 */
+        .pagination {
+            position: absolute;
+            z-index: 20;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background: #555;
+            margin: 0 5px;
+            opacity: 0.8;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .swiper-active-switch {
+            background: #fff;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="2-2.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="2-3.jpeg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="2-4.jpeg" alt="">
+            </div> -->
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/my_date.js"></script>
+    <script>
+
+        var aaa = document.querySelector(".swiper-wrapper")
+
+        var content_list = ""
+        for (var i = 0; i < date.length; i++) {
+            content_list += `<div class="swiper-slide">
+                <img src=`+ date[i].img + ` alt="">
+            </div>`
+        }
+
+
+        aaa.innerHTML = content_list
+
+
+        var mySwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            effect: `cube`,
+            keyboard: true,
+            autoplay: true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                // el: '.swiper-scrollbar',
+            },
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>

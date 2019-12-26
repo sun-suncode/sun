@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单验证</title>
+    <link rel="stylesheet" href="./css/biaodan.css">
+    <style>
+    .biaodanyanzheng{
+        width: 400px;
+        margin: 0 auto;
+        /* border: 1px solid blueviolet; */
+    }
+    
+    .op{
+        border: 0;
+    }
+    
+    </style>
+</head>
+
+<body>
+<div class="biaodanyanzheng">
+    <form>
+
+        <div class="form_control">
+
+            <input class="required" value="" type="text" name="email" data-tip="请输入您的邮箱"
+                data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确">
+
+        </div>
+
+        <div class="form_control">
+
+            <input class="required" value="" type="password" data-tip="请输入您的密码" data-valid="isNonEmpty||between:6-16"
+                data-error="密码不能为空||密码长度6-16位" name="nickname">
+
+        </div>
+
+        <div class="form_control">
+
+            <input class="required" value="" type="text" name="email" data-tip="请输入您的姓名"
+                data-valid="isNonEmpty||onlyZh||between:2-5" data-error="姓名不能为空||姓名只能为中文||姓名长度为2-5位">
+
+        </div>
+
+        <div class="form_control">
+
+            <span class="required" data-valid="isChecked" data-error="性别必选" data-type="radio">
+
+                <label><input type="radio" name="sex">男</label>
+
+                <label><input type="radio" name="sex">女</label>
+
+                <label><input type="radio" name="sex">未知</label>
+
+            </span>
+
+        </div>
+
+        <div class="form_control">
+
+            <select class="required op" data-valid="isNonEmpty" data-error="省份必填">
+
+                <option value="">请选择省份</option>
+
+                <option value="河南">河南</option>
+
+                <option value="北京">北京</option>
+
+                <option value="上海">上海</option>
+
+                <option value="浙江">浙江</option>
+
+                <option value="江苏">江苏</option>
+
+                <option value="山东">山东</option>
+
+                <option value="安徽">安徽</option>
+
+                <option value="黑龙江">黑龙江</option>
+
+                <option value="西藏">西藏</option>
+
+                <option value="江西">江西</option>
+
+                <option value="广东">广东</option>
+
+                <option value="福建">福建</option>
+
+                <option value="湖北">湖北</option>
+
+                <option value="湖南">湖南</option>
+
+                <option value="河北">河北</option>
+
+            </select>
+
+
+        </div>
+
+        <div class="tijiao">
+
+            <input type="submit" value="提交">
+
+        </div>
+
+    </form>
+</div>
+</body>
+<script src="./js/jquery-min.js"></script>
+<script src="./js/jquery-validate.js"></script>
+<script>
+
+
+    $('form').validate({
+
+        onFocus: function () {
+
+            this.parent().addClass('active');
+
+            return false;
+
+        },
+
+        onBlur: function () {
+
+            var $parent = this.parent();
+
+            var _status = parseInt(this.attr('data-status'));
+
+            $parent.removeClass('active');
+
+            if (!_status) {
+
+                $parent.addClass('error');
+
+            }
+
+            return false;
+
+        }
+
+    });
+
+
+
+    $('form').on('submit', function (event) {
+
+        event.preventDefault();
+
+        $(this).validate('submitValidate'); //return boolean;
+
+    });
+
+
+
+    $(".tijiao").click(function () {
+       alert("提交完成")
+    })
+
+
+
+</script>
+
+</html>
