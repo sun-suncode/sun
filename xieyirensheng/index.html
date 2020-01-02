@@ -44,7 +44,7 @@
         </div>
     </nav>
     <!-- 类似标题 -->
-    <div class="container title">
+    <div class="container title" style="padding-bottom: 30px;">
         <img src="./images/line_yellow.png" alt="">
         <span>OUR SERVICE</span>
         <img src="./images/line_yellow.png" alt="">
@@ -58,28 +58,88 @@
 
 
 
+    <div class="container home_content_list">
+
+        <!-- <div class="row  home_content"> -->
+
+
+        <div class="row yi">
+            <div class="col-md-7 uu" style="border-right:35px solid lightgray ;"><img src="./images/en_a1.jpg" alt="">
+            </div>
+            <div class="col-md-5 hh" style="padding:15px;">
+                <h2 style=" font-weight: bold;">Digital Effect Drawing</h2>
+                <p style="font-size: 20px;">Nosape eaqui non nobitati te ommos deria nos quatur? Pario comnit reris aut
+                    modic
+                    tecuptat omni ad explanditam verupis nia sequist la et liquo omnia
+                </p>
+            </div>
+        </div>
 
 
 
+        <div class="row yi" style="text-align: right;">
+            <div class="col-md-5 hh" style="padding:15px;">
+                <h2 style=" font-weight: bold;">Building&nbsp;Information Modeling</h2>
+                <p style="font-size: 20px;">Nosape eaqui non nobitati te ommos deria nos quatur? Pario
+                    comnit reris aut modic tecuptat omni ad explanditam verupis nia sequist la et liquo
+                    omnia
+                </p>
+            </div>
+            <div class="col-md-7 uu" style="border-left:35px solid lightgray ;"><img src="./images/en_b1.jpg" alt="">
+            </div>
+
+        </div>
 
 
-    <div class="container">
-        <div class="yi">
-            <!-- <img src="./images/en_a2.jpg" alt=""> -->
-            <div class="sugang"></div>
-            <p></p>
-
+        <div class="row yi">
+            <div class="col-md-7 uu" style="border-right:35px solid lightgray ;"><img src="./images/en_c1.jpg" alt="">
+            </div>
+            <div class="col-md-5 hh" style="padding:15px;">
+                <h2 style=" font-weight: bold;">Digital Effect Drawing</h2>
+                <p style="font-size: 20px;">Nosape eaqui non nobitati te ommos deria nos quatur? Pario comnit reris aut
+                    modic
+                    tecuptat omni ad explanditam verupis nia sequist la et liquo omnia
+                </p>
+            </div>
         </div>
 
 
 
     </div>
-
+    <!-- 
     <div style="font-size: 100px;">
         尚未完成
+    </div> -->
+
+
+
+
+
+
+
+
+    <div>
+        <div style="height: 300px; ">
+            <!-- 类似标题 -->
+            <div class="container title mar">
+                <img src="./images/line_yellow.png" alt="">
+                <span>CONTACT US</span>
+                <img src="./images/line_yellow.png" alt="">
+            </div>
+            <ul class="container title mar" style="line-height: 50px;">
+                <li><span>Email：eric@shining365.com</span></li>
+                <li><span>Mobile Phone：86 138 1690 3400</span></li>
+                <li> <span>Tel：+86 21 6598 6866-304</span> <span class="kk"> &nbsp;&nbsp;&nbsp;+86 21 6598
+                        3188-304</span></li>
+            </ul>
+
+        </div>
+        <div class="foot">
+            <p>
+                Copyright © 1998-2015 shining Group
+            </p>
+        </div>
     </div>
-
-
 
 
 
@@ -101,6 +161,34 @@
 
 
 
+    $(".yi").mouseenter(function () {
+        var that = this
+        var dian_index = $(this).index()
+
+        $(".yi").each(function (index, item) {
+            var cur_src = $(item).find("img").attr("src")
+            if (dian_index == index) {
+                $(item).find("img").attr("src", cur_src.replace("1", "2"))
+                $(this).find(".hh").css({
+                    "color": "black",
+                })
+                $(this).find(".uu").css({
+                    "border-color": "#CFDB00"
+                })
+
+            } else {
+
+                $(item).find("img").attr("src", cur_src.replace("2", "1"))
+                $(this).find(".hh").css({
+                    "color": "rgb(176, 176, 176)",
+                })
+                $(this).find(".uu").css({
+                    "border-color": "rgb(176, 176, 176)"
+                })
+
+            }
+        })
+    })
 
 
 

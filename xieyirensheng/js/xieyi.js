@@ -99,4 +99,3 @@
     }
 
     console.log(window.onresize())
-

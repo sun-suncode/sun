@@ -23,7 +23,7 @@ ul {
 .title {
     text-align: center;
     font-size: 1.5em;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .title>img {
@@ -31,12 +31,11 @@ ul {
     height: 0.8vh;
 }
 
-/* .haobuhao{
-float: right;
-} */
+
 .yi {
-    border-top: 0.5px solid gray;
-    border-bottom: 0.5px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    color: rgba(192, 192, 192, 0.8)
 }
 
 .sugang {
@@ -46,14 +45,7 @@ float: right;
     display: inline-block;
 }
 
-.yi>img {
-    vertical-align: top;
-    height: 100%;
-}
 
-.yi:hover {
-    background-color: chocolate;
-}
 
 .mar {
     margin-top: 40px;
@@ -83,12 +75,14 @@ float: right;
 .dihaojikuai {
     background-color: lightgray;
 }
+.dihaojikuai{
+    position: relative;
+}
 
 .oo {
-    width: 804px;
-    height: 35vh;
+    width: 100%;
+    height: 45vh;
     display: block;
-    margin: 0 auto;
 }
 
 
@@ -122,12 +116,13 @@ float: right;
 }
 
 .sdtu {
-    width: 80%;
-
+    /* width: 80%; */
+    background-color:rgba(1, 1, 1, 0.5);
     color: #b4b4b4;
     position: absolute;
     bottom: 0;
-    left: 18px;
+    left: 10px;
+    padding-left: 10px;
 }
 
 .sdtu>h3 {
@@ -149,6 +144,7 @@ float: right;
 .sd_list{
    padding: 80px;
    border-bottom: 1px solid gray;
+   position: relative;
 }
 .dw {
     width: 40px;
@@ -168,12 +164,17 @@ float: right;
 
 
 .dr:hover{
-    opacity: 0.7;
+ 
+    background-color: black;
+}
+.dr>img{
+    opacity: 0.5;
     filter: alpha(opacity=100);
 }
 .dl{
     opacity: 0.7;
     /* filter: alpha(opacity=100); */
+
 }
 
 .zhong{
@@ -182,4 +183,13 @@ float: right;
 
 .kk{
     text-indent: 2em;
+}
+
+.bim_list{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../images/BIM-bg1.png);
+}
+.zuo,.you{
+    display: inline-block;
 }

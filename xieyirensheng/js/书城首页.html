@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>掌阅书城</title>
+    <link rel="stylesheet" href="./zhangyueshucheng.css">
+
+    <style>
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .content-left {
+            width: 358px;
+            height: 526px;
+            float: left;
+            position: relative;
+        }
+
+
+        .content-right {
+            width: 283px;
+            height: 526px;
+        }
+
+        .content-center {
+            width: 356px;
+            height: 526px;
+            display: flex;
+            float: left;
+            position: relative;
+        }
+
+        .zhongbang {
+            width: 60px;
+            height: 60px;
+            background-image: url("./icon.png");
+            background-position: -28px -4px;
+        }
+
+
+
+
+
+        .a,
+        .b {
+            flex: 1;
+            width: 178px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .a p {
+            font-size: 12px;
+        }
+
+        .b p {
+            font-size: 12px;
+        }
+
+        .chushu1,
+        .chushu2,
+        .chushu3,
+        .chushu4 {
+            width: 176px;
+            height: 262px;
+            border: 2px solid #f0f0f0;
+            border-top: 0px;
+            padding-top: 40px;
+        }
+
+
+
+        .content2 li {
+            font-size: 12px;
+            padding-bottom: 5px;
+        }
+
+        .content a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .content span {
+            display: inline-block;
+            font-size: 12px;
+            color: #ccc;
+            width: 246px;
+            height: 64px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* white-space: nowrap; */
+            font-size: 12px;
+            margin-bottom: 94px;
+        }
+
+        .tuishu1 {
+            position: relative;
+            top: 14px;
+        }
+
+        .content2 {
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .content1,
+        .content5,
+        .content7 {
+            width: 1000px;
+            margin: 0 auto;
+
+            height: 130px;
+
+        }
+
+        .content5 li {
+            list-style: none;
+            display: inline-block;
+            font-size: 12px;
+
+        }
+
+        .content7 li {
+            list-style: none;
+            display: inline-block;
+            font-size: 12px;
+
+        }
+
+        .content2,
+        .content6,
+        .content8 {
+            width: 1000px;
+            height: 526px;
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            /* border: 1px solid black; */
+        }
+
+        .content3 {
+            width: 1000px;
+            height: 110px;
+            margin: 0 auto;
+
+        }
+
+        .gudaiyanqing,
+        .xiandaiyanqing,
+        .qinchunwenxue {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/ce16384b/group6/M00/EF/08/CmQUNlswWuGEI-P_AAAAAGcokYo470353353.jpg?v=zCb05qFg&t=CmQUNlswWuE.);
+            background-size: cover;
+            margin-top: 90px;
+        }
+
+        .xiandaiyanqing {
+
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/b1fb4c32/group6/M00/EF/08/CmQUNlswW06Ec5WmAAAAACImj3c976890971.jpg?v=pEoO4QEx&amp;t=CmQUNlswW04.);
+            background-size: cover;
+        }
+
+        .qinchunwenxue {
+
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/bfadaf77/group6/M00/EF/11/CmQUN1swh_mEfkV0AAAAANKnaaU020118518.jpg?v=Q1NQqWqL&amp;t=CmQUN1swh_k.);
+
+            background-size: cover;
+        }
+
+
+        .content4 {
+            width: 1000px;
+            height: 478px;
+            margin: 0 auto;
+            background-color: white;
+            /* border: 1px solid #ccc; */
+        }
+
+        .content4 p {
+            font-size: 12px;
+            color: #ccc;
+            padding-top: 10px;
+        }
+
+
+
+
+        .top {
+            height: 292px;
+            width: 1000px;
+            display: flex;
+        }
+
+        .guyan,
+        .xianyan,
+        .qinchun {
+            width: 333px;
+            height: 292px;
+            flex: 1;
+            border-right: 2px solid #f0f0f0;
+            border-bottom: 2px solid #f0f0f0;
+            /* padding-top: 80px; */
+
+        }
+
+        .pr {
+            padding-top: 10px;
+            height: 18px;
+        }
+
+        .renshu,
+        .pinglun {
+            width: 17px;
+            height: 18px;
+            background: url(./icon.png);
+            /* border: 1px solid black; */
+            display: inline-block;
+
+        }
+
+        .renshu {
+            background-position: -48px -218px;
+        }
+
+        .pinglun {
+            background-position: -68px -218px;
+        }
+
+        .center {
+            width: 1000px;
+            height: 57px;
+            /* border: 1px solid black; */
+            line-height: 90px;
+        }
+
+        .bottom {
+            height: 129px;
+            width: 1000px;
+            display: flex;
+            /* padding: 34px; */
+            justify-content: space-evenly;
+        }
+
+
+        .qingan {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/71fee514/group6/M00/1C/74/CmRablswwt2EKu2UAAAAAOQZ58o026610528.jpg?v=w64zJDdg&amp;t=CmRablswwt0.);
+            background-size: cover;
+        }
+
+        .kehuan {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/71fee514/group6/M00/1C/74/CmRablswwt2EKu2UAAAAAOQZ58o026610528.jpg?v=w64zJDdg&amp;t=CmRablswwt0.);
+            background-size: cover;
+        }
+
+        .xuanyituili {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/71fee514/group6/M00/1C/74/CmRablswwt2EKu2UAAAAAOQZ58o026610528.jpg?v=w64zJDdg&amp;t=CmRablswwt0.);
+            background-size: cover;
+        }
+
+        .wuxia {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/71fee514/group6/M00/1C/74/CmRablswwt2EKu2UAAAAAOQZ58o026610528.jpg?v=w64zJDdg&amp;t=CmRablswwt0.);
+            background-size: cover;
+        }
+
+        .wenxue {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: url(http://book.img.ireader.com/idc_1/m_1,w_300,h_400/71fee514/group6/M00/1C/74/CmRablswwt2EKu2UAAAAAOQZ58o026610528.jpg?v=w64zJDdg&amp;t=CmRablswwt0.);
+            background-size: cover;
+        }
+
+        .nshu {
+            width: 178px;
+            height: 176px;
+            border: 2px solid #f0f0f0;
+            border-top: 0px;
+            padding-top: 40px;
+            flex: 1;
+            /* overflow: hidden;
+            text-overflow:ellipsis; */
+            /* white-space: nowrap; */
+            position: relative;
+
+        }
+
+        .two p {
+            font-size: 12px;
+            position: absolute;
+            left: 14px;
+        }
+
+        h4 {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            font-size: 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+
+
+
+
+
+
+        /* 底部 */
+        .footer {
+            height: 345px;
+            background-color: #9E9E9E;
+            padding-top: 30px;
+        }
+
+        .footer1 {
+            width: 348px;
+            height: 138px;
+            background: #e6e6e6;
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 0 46px;
+        }
+
+        .footer1 h3 {
+            font-size: 18px;
+            text-align: center;
+            color: #212121;
+            padding: 22px 0 24px 0;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="h_left">
+            <img style="width: 160px; height: 32px;" src="http://www.ireader.com/static/images/web-logo.png" alt="">
+        </div>
+        <div class="h_right">
+            <a href="#">首页</a>
+            <a href="#">分类</a>
+            <a href="#">排行</a>
+            <a class="new_ele" href="#">正文大赛<img src="http://www.ireader.com/static/images/common/new.png" alt=""></a>
+            <a href="#">下载</a>
+            <span class="input_wrap">
+                <input class="author_ipt" type="text" placeholder="书名/作者">
+                <div class="search_ele"></div>
+            </span>
+            <span class="login_btn">登录</span>
+        </div>
+    </div>
+
+
+    <div class="nav">
+        <div class="recommendele">
+
+            <div class="recom_text">
+                <h2>成功的失败者：张学良传</h2>
+                <p>本书以张学良与父亲张作霖、前妻于凤至、妻子赵一荻等三个亲人，周恩来、郭松龄、宋美龄、蒋士云等四个朋友以及蒋介石、溥仪这两个当事人交往的故事为线索，梳理出其荣辱交叠、波澜起伏的人生经历，展现其复杂的性格，并对他在“九·一八”事变、西安事变等事件中的行为和心态做出精辟深邃的辨析。
+                </p>
+            </div>
+            <div class="recom_conten">
+                <div class="recom_left">
+                    <div class="play_icon icon_l"></div>
+                </div>
+                <div class="recom_center">
+                    <div class="shu shu_one"></div>
+                    <div class="shu shu_two"></div>
+                    <div class="shu shu_san"></div>
+                    <div class="shu shu_si"></div>
+                </div>
+                <div class="recom_right">
+                    <div class="play_icon icon_r"></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="content1">
+            <h2>出版图书</h2>
+            <ul>
+                <li><a href="#" class="style_grey">小说</a></li>
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">励志成功</a></li>
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">文学</a></li>
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">经济管理</a></li>
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">更多</a></li>
+            </ul>
+        </div>
+
+        <div class="content2">
+            <div class="content-left">
+                <div class="zhongbang"></div>
+                <h3>白夜行</h3>
+                <p>作者:东野圭吾</p>
+                <span>书友推荐：两个少年经历了人生中的黑暗，一辈子无法翻身，用罪恶掩盖罪恶，只为能更好地活在世上。但是他们犯下的错永远得不到原谅，正义永远在追逐他们，死亡是逃脱不了的结局。
+                    少年的爱会有多深？</span>
+                <div class="tuishu1">
+
+                    <img src="http://book.img.ireader.com/idc_1/m_1,w_156,h_208,q_100/4d34e2fc/group6/M00/14/0A/CmQUN1X04TeEaeGYAAAAAAfqtYc360167620.jpg?v=BoDMKYZ2&amp;t=CmQUN1uwlwk."
+                        title="白夜行" alt="白夜行" class="bookCover lazy">
+                </div>
+                <div class="tuishu2">
+                    <img src="http://www.ireader.com/static/images/index/shadow.gif" alt="">
+                </div>
+            </div>
+            <div class="content-center">
+
+                <div class="a">
+                    <div class="chushu1">
+                        <img src="http://book.img.ireader.com/idc_1/m_1,w_117,h_156,q_100/5222fee3/group61/M00/35/5B/CmQUOV2defeEKXf_AAAAAI-PE0Y983015733.jpg?v=i1VrdtZ0&amp;t=CmQUOV2defc."
+                            title="秦非得已" alt="秦非得已" class="lazy">
+                        <li> <a href="#">秦非得已</a></li>
+                        <p>禾维</p>
+                    </div>
+                    <div class="chushu2">
+                        <img src="http://book.img.ireader.com/idc_1/m_1,w_117,h_156,q_100/7411e12e/group61/M00/31/EF/CmQUOF2SLKaEGDJtAAAAAP-XsWQ713514708.jpg?v=JnmnDOec&amp;t=CmQUOF2SLKY."
+                            title="再青春" alt="再青春" class="lazy">
+                        <li> <a href="#">再青春</a></li>
+                        <p>辛夷坞</p>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="chushu3">
+                        <img src="http://book.img.ireader.com/idc_1/m_1,w_117,h_156,q_100/39b27580/group61/M00/3F/4F/CmQUOV2xH8KEQ-goAAAAABUJ_Bg343637798.jpg?v=WhuWNHHi&amp;t=CmQUOV2xH8I."
+                            title="霸霸反手就是一个么么哒" alt="霸霸反手就是一个么么哒" class="lazy">
+                        <li> <a href="#">霸霸反手就是一个么么哒</a></li>
+                        <p>周灿</p>
+                    </div>
+                    <div class="chushu4">
+                        <img src="http://book.img.ireader.com/idc_1/m_1,w_117,h_156,q_100/0a164af2/group61/M00/35/5A/CmQUOF2dhI2EeMSrAAAAAEiUl7k457483460.jpg?v=pky8A1kh&amp;t=CmQUOF2dhI0."
+                            title="天嫁之合" alt="天嫁之合" class="lazy">
+                        <li> <a href="#">天嫁之合</a></li>
+                        <p>禾维</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="conter-right fr">
+<h3>畅销榜qwe</h3>
+                <ul class="changxiaobang">
+
+                    <li>  <a href>情非得已</a></li>
+                    <li>  <a href>大清帝国(套装版)</a></li>
+                    <li>  <a href>情非得已</a></li>
+                    <li>  <a href>大清帝国(套装版)</a></li>
+                    <li>  <a href>情非得已</a></li>
+                    <li>  <a href>大清帝国(套装版)</a></li>
+                    <li>  <a href>情非得已</a></li>
+                    <li>  <a href>大清帝国(套装版)</a></li>
+                    <li>  <a href>情非得已</a></li>
+                    <li>  <a href>大清帝国(套装版)</a></li>
+                    
+
+
+
+            </div>
+        </div>
+
+        <div class="content3">
+            <h2>精选圈子</h2>
+        </div>
+        <div class="content4">
+            <div class="top">
+                <div class="guyan">
+                    <div class="gudaiyanqing"></div>
+                    <p>相望古言,相聚古言,古言-我们的家园</p>
+                    <span class="pr">
+                        <div class="renshu"></div>
+                        33W+
+                        <div class="pinglun"></div>
+                        35542
+                    </span>
+                </div>
+                <div class="xianyan">
+                    <div class="xiandaiyanqing"></div>
+                    <p>Hey,你的少女心💗掉在这里了...</p>
+                    <span class="pr">
+                        <div class="renshu"></div>
+                        19W+
+                        <div class="pinglun"></div>
+                        16150
+                    </span>
+                </div>
+
+                <div class="qinchun">
+                    <div class="qinchunwenxue"></div>
+                    <p>青嶂青溪直复斜，春雪空濛帘外寒；校量功力相千万，园林月白秋霖散。</p>
+                    <span class="pr">
+                        <div class="renshu"></div>
+                        13W+
+                        <div class="pinglun"></div>
+                        17660
+                    </span>
+                </div>
+            </div>
+            <div class="center">
+
+                <img src="http://www.ireader.com/static/images/common/zwtit.png" alt="" width="149px" height="29px">
+            </div>
+            <div class="bottom">
+                <div class="qingan"></div>
+                <div class="kehuan"></div>
+                <div class="xuanyituili"></div>
+                <div class="wuxia"></div>
+                <div class="wenxue"></div>
+            </div>
+        </div>
+        <div class="content5">
+            <h2>男生频道</h2>
+            <ul>
+
+
+                <li><a href="#" class="style_grey">玄幻</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">奇幻</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">武侠</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">仙侠</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">更多</a></li>
+
+
+            </ul>
+        </div>
+        <div class="content6">
+            <div class="content-left">
+                <div class="zhongbang"></div>
+                <h3>神级透视</h3>
+                <p>作者:不醉</p>
+                <span>一次意外让叶寒拥有了神奇的透视能力，从此他的人生变得丰富多彩，开拓最强商业帝国，称霸世界赌坛，一手医术妙手回春，成为医道圣手，坐拥亿万财富，萝莉，御姐，警花，女神纷纷朝他扑来，作为一个男人，而且还是一个限量版男人，叶寒的压力很大，不得已和几个盗墓者去探探险，然而，一个从远古追寻至今的惊天秘密逐渐浮现在了他的眼前！</span>
+                <div class="tuishu1">
+                    <img src="http://book.img.ireader.com/idc_1/m_1,w_156,h_208,q_100/ad6b747a/group6/M00/D1/AF/CmQUNljdDxaEXFymAAAAAPs9Myo904527712.jpg?v=TV30ilY6"
+                        title="神级透视" alt="神级透视" class="bookCover lazy">
+                </div>
+                <div class="tuishu2">
+                    <img src="http://www.ireader.com/static/images/index/shadow.gif" alt="">
+                </div>
+            </div>
+            <div class="content-center">
+
+                <div class="a">
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                </div>
+                <div class="b">
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                </div>
+
+            </div>
+            <div class="content-right fr">
+
+
+                <h3>畅销榜</h3>
+
+<ul class="changxiaobang">
+
+<li>  <a href>情非得已</a></li>
+<li>  <a href>大清帝国(套装版)</a></li>
+<li>  <a href>情非得已</a></li>
+<li>  <a href>大清帝国(套装版)</a></li>
+<li>  <a href>情非得已</a></li>
+<li>  <a href>大清帝国(套装版)</a></li>
+<li>  <a href>情非得已</a></li>
+<li>  <a href>大清帝国(套装版)</a></li>
+<li>  <a href>情非得已</a></li>
+<li>  <a href>大清帝国(套装版)</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+            </div>
+        </div>
+        <div class="content7">
+            <h2>女生频道</h2>
+            <ul>
+
+
+                <li><a href="#" class="style_grey">现代言情</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">古代言情</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">幻想言情</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">青春校园</a></li>
+
+                <li class="spacer"></li>
+                <li><a href="#" class="style_grey">更多</a></li>
+
+
+            </ul>
+        </div>
+        <div class="content8">
+            <div class="content-left">
+                <div class="zhongbang"></div>
+                <h3>闪婚错爱:帝少的心尖甜妻</h3>
+                <p>作者:凤然</p>
+                <span>传闻最为神秘的龙家继承人龙一凡那方面不行。许多个日夜之后叶一依感慨，流言这东西真的不可信！</span>
+                <div class="tuishu1">
+
+                    <img src="http://book.img.ireader.com/idc_1/m_1,w_156,h_208,q_100/dfb6aefd/group61/M00/44/62/CmQUOF278smEQRzHAAAAAOgthNI841131210.jpg?v=SdkAbImG&amp;t=CmQUOF278sk."
+                        title="闪婚错爱：帝少的心尖甜妻" alt="闪婚错爱：帝少的心尖甜妻" class="bookCover lazy">
+                </div>
+                <div class="tuishu2">
+                    <img src="http://www.ireader.com/static/images/index/shadow.gif" alt="">
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="a">
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                </div>
+                <div class="b">
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                    <div class="nshu"></div>
+                </div>
+
+
+                <div class="content-right fr">
+
+                    <h3>畅销榜</h3>
+
+
+                </div>
+
+            </div>
+        </div>
+        <style>
+            .iph,
+            .and {
+                width: 41px;
+                height: 40px;
+                background-image: url(./icon.png);
+                display: inline-block;
+                border: 1px solid black;
+               
+            }
+
+            .iph{
+                background-size: -20px -12px;
+                float: left;
+                line-height: 100px;
+            }
+          .footer1 p{
+                height: 40px;
+                display: inline-block;
+            }
+
+
+            
+        .huojian {
+            width: 63px;
+            height: 63px;
+            position: fixed;
+            bottom: 70px;
+            right: 185px;
+
+        }
+
+        .huojian a {
+            border-bottom: 0px;
+
+        }
+       
+
+        </style>
+ <div class="huojian">
+        <a href="书城首页.html"><img src="http://www.ireader.com/static/images/common/go_top.png"></a>
+    </div>
+        <div class="footer">
+
+            <div class="footer1">
+                <h3>获取掌阅iReader</h3>
+                <div class="iph"></div>
+                <p>下载Ios版</p>
+                <div class="and"></div>
+                <p>下载Android版</p>
+                </span>
+            </div>
+            <span>
+
+
+
+
+
+
+        </div>
+</body>
+
+</html>
