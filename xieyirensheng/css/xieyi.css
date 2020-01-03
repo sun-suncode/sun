@@ -185,11 +185,32 @@ ul {
     text-indent: 2em;
 }
 
-.bim_list{
+.bim_list1{
     width: 100vw;
     height: 80vh;
-    background-image: url(../images/BIM-bg1.png);
+ 
 }
 .zuo,.you{
     display: inline-block;
+}
+.bt{
+    background-image: url(../images/BIM-bg1.png);
+}
+.bim_list2{
+    background-image: url(../images/BIM-bg2.png);
+    background-position-x: right;
+    background-size: cover;
+}
+.bim_list3{
+    background-image: url(../images/BIM-bg3.png);
+    background-position-x: right;
+    background-size: cover;
+}
+.bim_list4{
+    background-image: url(../images/BIM-bg4.png);
+    background-size: cover;
+}
+.bim_list5{
+    background-image: url(../images/BIM-bg5.png);
+    background-size: cover;
 }
